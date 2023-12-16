@@ -18,8 +18,9 @@ public class Portal3 : MonoBehaviour
 
         if (collision.gameObject.name == "MainChar")
         {
-            Invoke("Portal", 2f);
+            
             anim.SetBool("isTrigger", true);
+            Invoke("Portal", 1f);
 
 
         }
