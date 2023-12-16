@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private float dirX = 0f;
     private float dirY = 0f;
     [SerializeField] private float speed = 3f;
-    [SerializeField] private float jumpAmount = 14f;
+    
     private SpriteRenderer sprites;
     private Animator anim;
     private enum MovementStates { idle_down, walk_down, walk_side, walk_up }
