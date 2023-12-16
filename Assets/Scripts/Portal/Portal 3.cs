@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Portal3 : MonoBehaviour
 {
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,6 +19,7 @@ public class Portal3 : MonoBehaviour
         if (collision.gameObject.name == "MainChar")
         {
             Invoke("Portal", 2f);
+
 
         }
 
